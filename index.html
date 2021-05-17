@@ -9,8 +9,8 @@
     <div class="maindiv">
      
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
+        Amount $ <input type="number"  id="principal">  <br/>
+        Rate % <input type="number"  id="rate">  <br/>
         No. of Years  <select id="years">
         <option value="1">1</option>
         <option value="2">2</option>
@@ -25,11 +25,11 @@
         </select>
         <br/>
         Interest : <span id="result"></span><br>
-<input type="range"  id="rate" min="minval" max="maxval" value="default_val">
+<input type="range"  onchange="updateRate()"   id="rate" min="minval" max="maxval" value="default_val">
 <span id="rate_val">
 10.25%
 </span>
-        <button onclick="compute()">Compute Interest</button>
+        <button onclick=compute()>Compute Interest</button>
         <span id="result">
 
         </span>
